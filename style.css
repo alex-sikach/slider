@@ -1,0 +1,50 @@
+div {
+    position: relative;
+}
+.container {
+    background-color:rgba(255, 44, 220, 0.507);
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 30px;
+}
+.slider {
+    width: 256px;
+    height: 256px;
+    border: 3px solid black;
+    overflow: hidden;
+    margin: 30px auto;
+}
+.slider-line {
+    position: relative;
+    width: 1024px;
+    height: 256px;
+    background-color: rgb(71, 255, 255);
+    display: flex;
+    left: 0px;
+    transition: all ease 1s;
+}
+button:hover {
+    background-color: red;
+    color: white;
+}
+button:active {
+    background-color: blue;
+    color: white;
+}
+button {
+    width: 100px;
+    height: 50px;
+    border-radius: 15px;
+    font-size: 25px;
+}
+.btns:hover .btn:not(:hover) {
+	filter: blur(2px) grayscale(1);
+    z-index: 0;
+}
+.btn:hover {
+    transform: scale(1.2);
+    z-index: 1;
+}
+.btns {
+    width: max-content;
+}
